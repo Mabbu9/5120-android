@@ -1,5 +1,5 @@
 
-package com.uberspot.a2048;
+package com.mabbu9.a5120;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -22,6 +22,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
 import android.widget.Toast;
+
+//import com.mabbu9.a5120.R;
 
 public class MainActivity extends Activity {
 
@@ -83,7 +85,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             mWebView.restoreState(savedInstanceState);
         } else {
-            mWebView.loadUrl("file:///android_asset/2048/index.html");
+            mWebView.loadUrl("file:///android_asset/5120/index.html");
         }
 
         Toast.makeText(getApplication(), R.string.toggle_fullscreen, Toast.LENGTH_SHORT).show();
