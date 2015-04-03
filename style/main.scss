@@ -527,7 +527,143 @@ hr {
   }
 
   // Render the game field at the right width
-  @include game-field;
+    .game-container {
+    margin-top: $game-container-margin-top;
+    position: relative;
+    padding: $grid-spacing;
+
+    cursor: default;
+    -webkit-touch-callout: none;
+    -ms-touch-callout: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    -ms-touch-action: none;
+    touch-action: none;
+
+    background: $game-container-background;
+    border-radius: $tile-border-radius + 6;
+    width: $field-width;
+    height: $field-width;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .game-message {
+      display: none;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba($tile-color, .5);
+      z-index: 100;
+
+      text-align: center;
+
+      p {
+        font-size: 60px;
+        font-weight: bold;
+        height: 60px;
+        line-height: 60px;
+        margin-top: 222px;
+        // height: $field-width;
+        // line-height: $field-width;
+      }
+
+      .lower {
+        display: block;
+        margin-top: 59px;
+      }
+
+      a {
+        @include button;
+        margin-left: 9px;
+        // margin-top: 59px;
+
+	&.keep-playing-button {
+	  display: none;
+	}
+      }
+
+      @include animation(fade-in 800ms ease $transition-speed * 12);
+      @include animation-fill-mode(both);
+
+      &.game-won {
+        background: rgba($tile-gold-color, .5);
+        color: $bright-text-color;
+
+	a.keep-playing-button {
+	  display: inline-block;
+	}
+      }
+
+      &.game-won, &.game-over {
+        display: block;
+      }
+    }
+  }
+
+  .grid-container {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .grid-row {
+    margin-bottom: $grid-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .grid-cell {
+    width: $tile-size;
+    height: $tile-size;
+    margin-right: $grid-spacing;
+    float: left;
+
+    border-radius: $tile-border-radius;
+
+    background: rgba($tile-color, .35);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .tile-container {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .tile {
+    &, .tile-inner {
+      width: ceil($tile-size);
+      height: ceil($tile-size);
+      line-height: ceil($tile-size);
+    }
+
+    // Build position classes
+    @for $x from 1 through $grid-row-cells {
+      @for $y from 1 through $grid-row-cells {
+        &.tile-position-#{$x}-#{$y} {
+          $xPos: floor(($tile-size + $grid-spacing) * ($x - 1));
+          $yPos: floor(($tile-size + $grid-spacing) * ($y - 1));
+          @include transform(translate($xPos, $yPos));
+        }
+      }
+    }
+  }
 
   // Rest of the font-size adjustments in the tile class
   .tile .tile-inner {
