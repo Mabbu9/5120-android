@@ -50,7 +50,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #A0A5BB;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -143,7 +143,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #A0A5BB;
   border-radius: 60px;
   width: 500px;
   height: 500px;
@@ -177,7 +177,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #666e8f;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -473,7 +473,7 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #666e8f;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -536,7 +536,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #A0A5BB;
     border-radius: 60px;
     width: 500px;
     height: 500px;
@@ -570,7 +570,7 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: #666e8f;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
