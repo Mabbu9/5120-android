@@ -5,7 +5,7 @@ $field-width: 500px;
 $grid-spacing: 15px;
 $grid-row-cells: 4;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
-$tile-border-radius: 3px;
+$tile-border-radius: 54px;
 
 $mobile-threshold: $field-width + 20px;
 
@@ -17,7 +17,7 @@ $tile-gold-color: #edc22e;
 $tile-gold-glow-color: lighten($tile-gold-color, 15%);
 
 $game-container-margin-top: 40px;
-$game-container-background: #bbada0;
+$game-container-background: #A0A5BB;
 
 $transition-speed: 100ms;
 
@@ -186,7 +186,7 @@ hr {
     touch-action: none;
 
     background: $game-container-background;
-    border-radius: $tile-border-radius * 2;
+    border-radius: $tile-border-radius + 6;
     width: $field-width;
     height: $field-width;
     -webkit-box-sizing: border-box;
