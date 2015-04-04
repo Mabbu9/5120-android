@@ -69,7 +69,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #EEE4DA; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -188,7 +188,7 @@ hr {
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
+      background: rgba(46, 56, 237, 0.5);
       color: #f9f6f2; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
@@ -301,72 +301,72 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 54px;
-    background: #eee4da;
+    background: #EEE4DA;
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 55px; }
-  .tile.tile-2 .tile-inner {
+    font-size: 36px; }
+  .tile.tile-10 .tile-inner {
     background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-4 .tile-inner {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-8 .tile-inner {
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-20 .tile-inner {
+    background: #dad2db;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-40 .tile-inner {
+    background: #c7c1dd;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-80 .tile-inner {
+    background: #b4b0df;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-160 .tile-inner {
+    background: #a19fe1;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.07937), inset 0 0 0 1px rgba(255, 255, 255, 0.04762); }
+  .tile.tile-320 .tile-inner {
+    background: #8e8ee3;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.15873), inset 0 0 0 1px rgba(255, 255, 255, 0.09524); }
+  .tile.tile-640 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
-  .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
-  .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
-  .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
-  .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    background: #7a7ce5;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-128 .tile-inner {
+      .tile.tile-640 .tile-inner {
         font-size: 25px; } }
-  .tile.tile-256 .tile-inner {
+  .tile.tile-1280 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    background: #676be7;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-256 .tile-inner {
+      .tile.tile-1280 .tile-inner {
         font-size: 25px; } }
-  .tile.tile-512 .tile-inner {
+  .tile.tile-2560 .tile-inner {
     color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    background: #545ae9;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-512 .tile-inner {
+      .tile.tile-2560 .tile-inner {
         font-size: 25px; } }
-  .tile.tile-1024 .tile-inner {
+  .tile.tile-5120 .tile-inner {
     color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    background: #4149eb;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-1024 .tile-inner {
+      .tile.tile-5120 .tile-inner {
         font-size: 15px; } }
-  .tile.tile-2048 .tile-inner {
+  .tile.tile-10240 .tile-inner {
     color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    background: #2e38ed;
+    box-shadow: 0 0 30px 10px rgba(116, 123, 243, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-2048 .tile-inner {
+      .tile.tile-10240 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #3c3a32;
+    background: #32333c;
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
@@ -581,7 +581,7 @@ hr {
         .game-container .game-message a.keep-playing-button {
           display: none; }
       .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
+        background: rgba(46, 56, 237, 0.5);
         color: #f9f6f2; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
@@ -685,7 +685,7 @@ hr {
     transform: translate(202px, 202px); }
 
   .tile .tile-inner {
-    font-size: 35px; }
+    font-size: 24px; }
 
   .game-message p {
     font-size: 30px !important;
