@@ -3,9 +3,11 @@
 A clone of [2048](https://github.com/gabrielecirulli/2048) which in turn is a small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
 
 ## Modified
-This has been forked and modified by the team at Mabbu9. 
+This has been forked and modified by the team at Mabbu9.
 
 ### Original Contributions
+
+[Gabriele Cirulli](https://github.com/gabrielecirulli/)
 
 [Anna Harren](https://github.com/iirelu/) and [sigod](https://github.com/sigod)
 
@@ -21,10 +23,8 @@ Many thanks to [rayhaanj](https://github.com/rayhaanj), [Mechazawa](https://gith
 ### Screenshot
 
 <p align="center">
-  <img src="http://pictures.gabrielecirulli.com/2048-20140309-234100.png" alt="Screenshot"/>
+  <img src="https://raw.githubusercontent.com/Mabbu9/5120/master/5120.jpg" alt="Screenshot"/>
 </p>
-
-That screenshot is fake, by the way. I never reached 2048 :smile:
 
 ## License
 5120 is licensed under the [MIT license.](https://github.com/Mabbu9/5120/blob/master/LICENSE.txt)
